@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sum of Arguments</h1>
+    <p id="demo"></p>
+    <p id="sin"></p>
+    <p id="cos"></p>
+    <p id="tan"></p>
+
+    <script>
+        function sumAll(){
+            var sum = 0
+            for (i=0;i<arguments.length;i++){
+                sum = sum+arguments[i]
+            }
+            return sum
+            
+        }
+        document.getElementById("demo").innerHTML = sumAll(45,6,78,12,4)
+        var value = Math.sin(45)
+        var value1 = Math.cos(45)
+        var value2 = Math.tan(45)
+
+        document.getElementById("sin").innerHTML = value
+        document.getElementById("cos").innerHTML = value1
+        document.getElementById("tan").innerHTML = value2
+    </script>
+</body>
+</html>
